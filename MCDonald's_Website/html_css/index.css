@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+   
+    /* color: goldenrod; */
+
+}
+
+:root
+{
+    --black:black;
+    --goldenrod:goldenrod;
+   --red:rgb(204, 31, 31);
+}
+body{
+    background-color: rgb(246, 242, 236);
+}
+/* ::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background:rgba(28, 230, 92, 0.377) ;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--green);
+}
+::selection{
+     background-color: var(--green);
+     animation: selec 5s;
+} */
+ .main-div{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+   /* flex: 1px 3px 500px; */
+ }
+ .main-div .Nav-bar{
+    border: 1px solid rgb(178, 176, 176);
+    box-shadow: 2px 2px 3px rgb(84, 83, 83);
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    /* flex: 1px 3px 500px; */
+ }
+ .Nav-bar .logo{
+    display: flex;
+    
+    align-content: center;
+    padding: 20px 0;
+ }
+ .Nav-bar .logo a img{
+   align-content: center;
+   padding: 20px 0px 0px 0px;
+ }
+ /* .main-div .Delivery-option{
+    background-color: red;
+ }
+ .main-div .Delivery-option option{
+    font-size: 30px;
+
+ } */
+  .main-div .Delivery-option{
+    transition: ease-in;
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+  }
+  .main-div .Delivery-option .d{
+    padding: 10px;
+   display: flex;
+    border: 2px solid rgb(185, 183, 183);
+    box-shadow: 1px 2px 3px gray;
+    border-radius: 10px;
+    width: 120px;
+    height: 60px;
+    font-size: 15px;
+    transition: 0.01s;
+  }
+  .main-div .Delivery-option .d:hover{
+    transform: scale(1.03);
+    background-color: rgb(204, 31, 31);
+  }
+  .main-div .Delivery-option .d a{
+    text-decoration: none;
+    color: var(--goldenrod);
+
+  }
+  .main-div .Delivery-option .d .Img_logo{
+    padding: 2px;
+   align-content: center;
+  }
+  .main-div .Delivery-option .d .Title{
+    padding: 2px;
+   align-content: center;
+  }
+.Nav-bar .Delivery-option a img{
+ justify-content: center;
+}
+.Nav-bar .Delivery-option a h4{
+    justify-content: center;
+   }
+   /* Address */
+   .Nav-bar .Address{
+    /* border: 2px solid rgb(185, 183, 183); */
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 10px;
+    display: flex;
+    /* flex-shrink: 1px; */
+    /* width: 60%; */
+    height: 60px;
+    margin: 10px;
+    gap: 10px;
+   
+   }
+   .Nav-bar .Address:hover{
+        transform: scale(1.02);
+   }
+   .Nav-bar .Address .image{
+    padding: 10px;
+    justify-content: center;
+   }
+   .Address .Add{
+   text-align: center;
+   padding: 10px;
+   }
+   .Address .time{
+    display: flex;
+   }
+   .Address .time i{
+    padding: 10px;
+    justify-content: center;
+   }
+   .Address .time p{
+    text-align: center;
+   padding: 10px;
+    color: var(--goldenrod);
+   }
+   .Nav-bar .Nav{
+    margin: 10px;
+    /* border: 2px solid rgb(185, 183, 183); */
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    /* width: 60%; */
+    justify-content: space-between;
+   }
+   .Nav-bar .Nav:hover{
+    transform: scale(1.02);
+    background-color: var(--red);
+}
+   .Nav-bar .Nav h3{
+    padding: 10px;
+       text-align: center;
+       color: var(--goldenrod);
+   }
+   .Nav-bar .Nav i{
+    padding: 10px;
+    justify-items: center;
+   }
+   /* HOME */
+   .Container .Home{
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: ease-in;
+  
+   }
+   .Container .Home img{
+    /* border: 2px solid black; */
+    border-radius: 3px;
+    padding: 2px;
+    box-shadow: 2px 2px 3px rgb(94, 92, 92);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: ease-in;
+   }
+   .Container .Home img:hover{
+    transition: ease-in;
+    transform: scale(1.001);
+   }
+   /* Popular_deals_new launch */
+   .Popular_deals_newlaunch{
+    padding: 20px ;
+    margin: 10px 30px;
+    display: flex;
+    align-content: center; 
+    gap: 20px;
+   }
+   .Popular_deals_newlaunch .deal{
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px gray;
+   }
+   .Popular_deals_newlaunch .deal:hover{
+    transform: scale(1.04);
+    background: var(--red);
+    /* color: aliceblue; */
+    color: var(--goldenrod);
+   }
+
+   /* Card */
+   .CARDS{
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    margin: 30px;
+    transition: ease;
+    gap: 10px;
+   }
+   .CARDS .card1{
+    transition: ease;
+   margin-right: 5px;
+    margin: 25px 0px;
+    height: 300px;
+    /* flex: 5px 2px 350px; */
+    width: 260px;
+ align-items: center;
+ position: relative;
+ border: 2px solid gainsboro;
+ background-color: white;
+ border-radius: 15px;
+ box-shadow: 2px 2px 2px gainsboro;
+
+   }
+   .CARDS .card1:hover{
+    transform: scale(1.01);
+    background: rgb(250, 233, 233);
+   }
+   .CARDS .card1 .IG{
+    width: 100%;
+   }
+   .CARDS .card1 .IG img{
+    position: absolute;
+    top: -60px;
+    left: 30px;
+    height: 110px;
+    width: 180px;
+   }
+   .CARDS .card1 .Veg_Nlog{
+    width: 100%;
+   }
+   .CARDS .card1 .Veg_Nlog img{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+   }
+   .CARDS .card1 .Name{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+
+   }
+   .CARDS .card1 .Rs{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+   }
+   /* customisable */
+   .CARDS .card1  .Cust{
+    /* display: flex;
+    flex-direction: row; */
+    position: absolute;
+    transition: ease-in;
+    top: 140px;
+   right: 10px;
+   }
+   .CARDS .card1  .Cust i{
+    border: 2px solid gold;
+    background-color: gold;
+    height: 10px;
+    width: 10px;
+    padding:5px ;
+    
+   border-radius: 9px;
+    
+   }
+   .CARDS .card1  .Cust a{
+    text-decoration: none;
+    margin: 10px;
+    color: gray;
+   }
+   .CARDS .card1  .Cust a p{
+    margin: 10px 0;
+    
+   }
+   .line p{
+     color: var(--goldenrod);
+    position: absolute;
+   bottom: 90px;
+   padding: 10px;
+    left: 0px;
+   }
+   .CARDS .log_card{
+    display: flex;
+   }
+   .CARDS .log_card .log{
+    padding: 10px;
+display: flex;
+position: absolute;
+bottom: 10%;
+gap: 10px;
+   }
+   .CARDS .log_card .log .log1 p{
+    color: var(--goldenrod);
+   }
+   .CARDS .log_card .log2{
+    /* display: flex; */
+    text-align: end;
+    color: var(--goldenrod);
+position: absolute;
+bottom: 10%;
+right: 10px;
+gap: 10px;
+   }
+.D{
+  /* display: flex; */
+  color: var(--black);
+  text-shadow: 2px 2px 3px rgb(171, 166, 166);
+  padding: 20px;
+ text-align: center;
+}
+.D:hover{
+  transform: scale(1.03);
+  color: var(--goldenrod);
+  background-color: var(--red);
+ border-bottom: 2px 2px solid var(--red);
+ box-shadow: 2px 2px 3px gray;
+}
+   .Best-Deals{
+    transition: ease;
+    display: flex;
+    gap: 10px;
+    margin: 20px 30px;
+    padding: 10px;
+   }
+   .Best-Deals .Best {
+ width: 100%;
+ height: 100%;
+
+   }
+   .Best-Deals .Best img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(185, 183, 183);
+    box-shadow: 2px 2px 2px gainsboro;
+    border-radius: 5px;
+      }
+      .Best-Deals .Best img:hover {
+        width: 100%;
+        transform: scale(1.03);
+      }
+      .Menu{
+        transition: ease-in;
+        display: flex;
+        flex-direction: column;
+       gap: 3px;
+        padding: 20px;
+        margin:30px  20px;
+        
+      } 
+      .Menu .tit{
+        text-align: center;
+        padding: 10px;
+        margin: 30px;
+        text-shadow: 2px 2px 3px gray;
+      }
+      
+      .Menu .Menu_199{
+        
+        /* display: flex; */
+        /* flex-direction: column; */
+        border: 2px solid rgb(236, 233, 233);
+        box-shadow: 2px 2px 3px rgb(126, 124, 124);
+        width: 100%;
+        height: 100%;
+        transition: ease-in;
+      }
+      .Menu  .Menu_about{
+        text-align: center;
+      }
+      .Menu .Menu_199 img{
+        padding: 10px;
+        margin: 10px 0;
+        
+        align-content: center;
+        width: 300px;
+        height: 200px;
+
+
+      }
+      .Menu .Menu_199 :hover{
+        transform: scale(1.04);
+      }
+      .Menu_199 .Menu_img{
+        display: flex;
+        justify-content: center;
+      }
+      .Menu_1992{
+     
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+      }
+      .Menu_1992 .Menu_img1{
+       /* align-content: center; */
+        padding: 10px;
+        border: 2px solid rgb(236, 233, 233);
+        box-shadow: 2px 2px 3px rgb(211, 209, 209);
+      }
+      .Menu_1992 .Menu_img img{
+        height: 160px;
+        width: 200px;
+        padding: 10px;
+        position: fixed;
+        display: flex;
+       flex: 2px 2px 200px;
+        align-content: center;
+      }
+      .Menu_1992  :hover{
+       transform: scale(1.03);
+      }
+      
+      /* Beverage */
+      .Beverage{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: ease;
+        align-items: center;
+      }
+      .Beverage .bev{
+        transition: ease;
+        transition: .3s;
+        color: rgb(66, 64, 64);
+        font-size: 2rem;
+        text-shadow: 1px 2px 3px grey;
+      }
+      .Beverage .B_Img{
+        /* height: 100%;
+        width: 100%; */
+        padding: 5px;
+      }
+      .Beverage .B_Img img:hover{
+        transition: ease;
+        transform: scale(1.001);
+        border: 2px solid gainsboro;
+        box-shadow: 1px 2px 3px rgb(193, 190, 190);
+      }
+      /* Cart */
+      .Cart{
+        transition: ease-in;
+        margin: 30px 0px;
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+       padding: 10px;
+       background-color: gainsboro;
+      }
+      .Cart .Ca{
+        background-color: palegoldenrod;
+        align-content: center;
+       
+      }
+      .Ca .cart_img{
+        width: 100%;
+        height: 100%;
+       /* justify-content: center; */
+      }
+      .Ca .cart_img img{
+        align-content: center;
+        padding: 10px;
+        
+      }
+      .Ca .cart_img :hover{
+        transform: scale(1.05);
+      }
+      .Ca .cart_name{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+      .Cart .add_cart{
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        gap: 10px;
+        text-align: center;
+        width: 100%;
+      }
+      .add_cart p{
+        
+        margin-top: 5px;
+      }
+      .Cart .add_cart a{
+        margin-bottom: 20px;
+        /* padding: 10px; */
+        font-style: none;
+        text-decoration: none;
+        /* color: var(--goldenrod);
+        background-color: var(--red); */
+        height: 50px;
+        
+        justify-content: center;
+
+        text-align: center;
+      }
+.add_cart a input{
+  color: var(--goldenrod);
+  background-color: var(--red);
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.add_cart a input:hover{
+  transform: scale(1.04);
+}
